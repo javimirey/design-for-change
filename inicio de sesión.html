@@ -12,20 +12,34 @@
   
   <div id="after_submit"></div>
 <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-  <div class="row">
+  
+   <center><div class="row">
     <label class="required" for="name">Your name:</label><br />
-    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    <input id="name" class="input" name="name" type="text" value="" size="30" placeholder="name" /><br />
     <span id="name_validation" class="error_message"></span>
-  </div>
-  <div class="row">
+     </div></center>
+  
+   <center><div class="row">
     <label class="required" for="email">Your email:</label><br />
-    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    <input id="email" class="input" name="email" type="text" value="" size="30" placeholder="email" /><br />
     <span id="email_validation" class="error_message"></span>
-  </div>
+     </div></center>
+  
+   <center><div class="row">
+    <label class="required" for="password">Your password:</label><br />
+    <input id="password" class="input" name="password" type="text" value="" size="30" placeholder="password" /><br />
+    <span id="password_validation" class="error_message"></span>
+     </div></center>
  
-    
-    <input id="submit_button" type="button" value="Send Account" onclick="window.open "avatar.html"/>
-</form>
+    <?php
+       include("registrar.php");
+    ?>
+  
+  
+  
+    <input id="submit_button" type="button" value="Send Account"/> 
+  
+  </form>
                                                                                              
 
 </body>
